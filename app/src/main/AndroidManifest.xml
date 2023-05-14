@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walking">
+
+    <uses-permission android:name="android.permission.INTERNET" /> //인터넷 권한 부여
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>  //인터넷 권한 부여
+    //현재 위도 경도 위치 권한
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".KakaoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Walking"
+
+        android:usesCleartextTraffic="true"> // 기상청 API가 http 기반이므로 http 허용
+
+
+
+
+        //네이버
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="tshtgvhkdt">
+        </meta-data>
+
+        <meta-data
+            android:name="com.naver.maps.geometry"
+            android:value="sblwrwtxtv"
+        >
+        </meta-data>
+
+
+
+        <activity
+
+            android:name=".IntroActivity"
+
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MypageLogin" />
+        <activity android:name=".MypageDogAdmin" />
+        <activity android:name=".MypageDogAdd"/>
+        <activity android:name=".MypageSignup"/>
+        <activity android:name=".Tabwalk"/>
+
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao3ecb7b0d17df3214bc8d47398182b50f" />
+
+            </intent-filter>
+        </activity>
+    </application>
+    </manifest>
