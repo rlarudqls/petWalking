@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="30dp"
+            android:text="경로 지정"
+            android:textSize="30sp"
+            android:fontFamily="@font/onemobilebold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="293dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/linkseletion_item_readylink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="새로운 경로"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/onemobilebold"/>
+
+                <CheckBox
+                    android:id="@+id/linkseletion_newycheckbox"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:gravity="center"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/linkseletion_item_newlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="기존 경로"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/onemobilebold"/>
+
+                <CheckBox
+                    android:id="@+id/linkseletion_alreadcheckbox"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:gravity="center"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_startwalk"
+            android:layout_width="412dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:fontFamily="@font/onemobilebold"
+            android:text="경로 지정" />
+    </LinearLayout>
+
+
+</LinearLayout>

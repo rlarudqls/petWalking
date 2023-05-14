@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="30dp"
+            android:text="반려견 선택"
+            android:textSize="30sp"
+            android:fontFamily="@font/onemobilebold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listview_dogselection"
+            android:layout_width="369dp"
+            android:layout_height="259dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp" />
+
+
+        <Button
+            android:id="@+id/btn_hide_bt_sheet"
+            android:layout_width="412dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:text="반려견 선택"
+            android:fontFamily="@font/onemobilebold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

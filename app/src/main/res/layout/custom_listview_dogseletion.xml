@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypage_DogAdd_Item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/button_round">
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="117dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageViewSelection_dog"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/listSelection_item_dogname"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:text="TextView"
+            android:textSize="25dp"
+            android:fontFamily="@font/onemobilebold"/>
+
+        <CheckBox
+            android:id="@+id/bottomsheetdogselect_listview_dog"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:button="@drawable/custom_checkbox"
+            android:gravity="center"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

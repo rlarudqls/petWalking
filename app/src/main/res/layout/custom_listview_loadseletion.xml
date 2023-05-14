@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypage_DogAdd_Item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/button_round">
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="117dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/listSelection_item_loadname"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/onemobilebold"
+            android:gravity="center|start"
+            android:text="20XX년XX월XX일"
+            android:textSize="25dp" />
+
+        <CheckBox
+            android:id="@+id/bottomsheetloadselect_check_load"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:button="@drawable/custom_checkbox"
+            android:gravity="center"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

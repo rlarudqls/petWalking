@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MypageFragment">
+
+    // 마이페이지 경계선 레이아웃
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/mypage_loginbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_round"
+
+            android:drawableLeft="@drawable/ic_key"
+            android:drawableRight="@drawable/ic_arrow"
+
+
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="로그인"
+            android:fontFamily="@font/onemobilebold"
+
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mypage_dogbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_round"
+
+            android:drawableLeft="@drawable/ic_dog_24dp"
+            android:drawableRight="@drawable/ic_arrow"
+
+
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="반려견 관리"
+            android:fontFamily="@font/onemobilebold"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mypage_walkdiarybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_round"
+
+
+            android:drawableLeft="@drawable/ic_dog_24dp"
+            android:drawableRight="@drawable/ic_arrow"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="산책 일지"
+            android:fontFamily="@font/onemobilebold"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
+

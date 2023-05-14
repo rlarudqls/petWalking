@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypage_DogAdd_Item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp">
+
+            <TextView
+                android:id="@+id/list_recorditem_startTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/onemobilebold"
+                android:text="시작 시간 :"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/list_recorditem_endTime"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+
+            android:fontFamily="@font/onemobilebold"
+            android:text="종류 시간 :"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/list_recorditem_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:fontFamily="@font/onemobilebold"
+            android:text="총 시간 % 총 길이 % 마킹 횟수 %"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+</LinearLayout>

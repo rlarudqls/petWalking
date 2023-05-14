@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/text56"
+        android:layout_width="104dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="산책 시간"
+        android:fontFamily="@font/onemobilebold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="101dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="104dp"
+        android:gravity="center"
+        android:text="거리(KM)"
+        android:fontFamily="@font/onemobilebold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toEndOf="@+id/text56"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/stopwatch"
+        android:layout_width="148dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="0:00:00"
+        android:textSize="20dp"
+        android:fontFamily="@font/onemobilebold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/walklenge"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="0.00"
+        android:textSize="20dp"
+        android:fontFamily="@font/onemobilebold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toEndOf="@+id/stopwatch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Button
+        android:id="@+id/playbutton"
+        android:layout_width="85dp"
+        android:layout_height="88dp"
+        android:fontFamily="@font/onemobilebold"
+        android:background="@drawable/ic_baseline_play_arrow_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopwatch"
+        app:layout_constraintVertical_bias="0.666"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/stopbutton"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:background="@drawable/ic_baseline_stop_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toEndOf="@+id/playbutton"
+        app:layout_constraintTop_toBottomOf="@+id/walklenge"
+        app:layout_constraintVertical_bias="0.7"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/markingbutton"
+        android:layout_width="80dp"
+        android:layout_height="89dp"
+        android:background="@drawable/ic_baseline_thumb_up_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toEndOf="@+id/stopbutton"
+        app:layout_constraintTop_toBottomOf="@+id/walklenge"
+        app:layout_constraintVertical_bias="0.655"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
