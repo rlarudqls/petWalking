@@ -1,0 +1,19 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/'} //카카오
+        maven { url 'https://naver.jfrog.io/artifactory/maven/' }
+
+        //네이버
+
+
+        maven { url "https://jitpack.io" }
+
+
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "walking"
+include ':app'
